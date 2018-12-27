@@ -1,0 +1,30 @@
+---
+# We'll use defaults from the LLVM style, but with 4 columns indentation.
+BasedOnStyle: LLVM
+UseTab: Never
+IndentWidth: 4
+AllowShortIfStatementsOnASingleLine: false
+IndentCaseLabels: true
+AlignTrailingComments: true
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+---
+Language: ObjC
+ColumnLimit: 120
+ObjCSpaceAfterProperty: true
+---
+Language: Cpp
+# Force pointers to the type for C++.
+# DerivePointerAlignment: false
+# PointerAlignment: Left
+---
+Language: JavaScript
+# Use 100 columns for JS.
+ColumnLimit: 100
+---
+Language: Proto
+AlignConsecutiveAssignments: true
+
+# Don't format .proto files.
+# DisableFormat: true
